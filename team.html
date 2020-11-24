@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FootBall Info</title>
+    <meta name="description" content="FootBall Info" />
+    <link rel="shortcut icon" href="/images/logo_128.png">
+    <link rel="apple-touch-icon" href="/images/logo_ios.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#80DEEA" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  </head>
+  <body class="cyan lighten-3">
+    <!-- Navigasi -->
+    <nav class="light-blue darken-4" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo" id="logo-container">FootBall Info</a>
+        <a href="#" class="sidenav-trigger" onclick="window.history.back();">
+          <i class="material-icons">arrow_back</i>
+        </a>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <div id="progress" class="progress">
+      <div class="indeterminate"></div>
+    </div>
+    <div class="container" id="body-content">
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large cyan pulse" style="display: none;" id="save">
+        <i class="large material-icons">save</i>
+      </a>
+    </div>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red" style="display: none;" id="delete">
+        <i class="large material-icons">delete_forever</i>
+      </a>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/sw-team.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/api.js"></script>
+  </body>
+</html>
